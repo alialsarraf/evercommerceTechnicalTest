@@ -37,6 +37,8 @@ To provide reading or training materials for understanding the project, I will s
 * [Playwright](https://playwright.dev/): Playwright have got a great reference documentation and I would recommend any begginer before delving into understanding this project, is have a read and play first with the [Playwright CodeGen](https://playwright.dev/docs/codegen), this will give them a great way to understand the basic and record the test flow they want to build.
 * [Playwright POM](https://playwright.dev/docs/pom): To understand the reasons and basic of why we follow the Page Object Model, when designing any UI Automation test.
 * Learning how to code, NodeJS and any use library got enough documentation, else I  would recommend Udemy or Code Acadmey if the company can provide training.
+* [GIT](https://rogerdudler.github.io/git-guide/): Important to teach and understand how our Sourcecontrol process work and creating pull requests. 
+  * Assuming Git is Evercommerce default source control language.
   
 
 # Excerise One
@@ -67,7 +69,7 @@ To answer this questions, I usually build a guideline that we need to fllow:
 * Understand what any new feature build, might introduce to our system. For example, we added another API call that might effect the speed of sending an sms or email notification. Which might, effect our polling await to see if either SMS or email notification recieved within our agreed margin. (example, with Accordo, we had an email notification process, we had an agreed margin for the await, but everytime some new feature got added, it caused the tests to be flaky, that mainly becaues its the system. We disccussed with our Teac lead and had to agree on the an agreed time we can't break).
 * Communication, have always been the main challenge and adding a new process or practice to a company is always a challenge. We have to agree on a middle line that we all must agree.
 
-Even with guidelines, it usually get missed, my approach is mainly understand the issue of the feature and match it with how the test and the framework was built. Because, what was written yesterday, might not be ideal for tomorrow's solution. That is a similar approach with the features we are building based on the technologies we use. 
+Even with guidelines, it usually get missed, my approach is mainly understand the issue of the feature and match it with how the test and the framework were built. Because, what was written yesterday, might not be ideal for tomorrow's solution. That is a similar approach with how Engineering develop and maintain new and existing features we are building based on the technologies we use. 
   
 # CI/CD
 
