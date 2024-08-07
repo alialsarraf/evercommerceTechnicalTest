@@ -1,4 +1,5 @@
-// This is taking into account that we are refering to the Page object Model class and calls the verify element exist and functionality in the POM files
+// This is taking into account that we are refering to the Page object Model class and calls the
+// verify element exist and functionality in the POM files
 
 it("Existing appointment is clickable on the calander page"){
     // Existing appointment details loaded correctly

@@ -53,6 +53,8 @@ The Project breakdown is as follow:
 - test 
 -- Feature (for example Login, and each feature folder, will contains the basic, alternative, and error flows. Its better to breakdown the tests into small test files, else it will be hard to follow and read)
 ```
+Further note:
+With Playwright, it will be easier to setup the tests to run on different supported browser and iOS App (note the iOS app will be using WebKit and not actual Safari, more detaisl [here](https://playwright.dev/docs/browsers#webkit))
 
 Please refer to each file, there are discription of what each file does and possible functionalities and test scenarios for each feature.
 
@@ -87,5 +89,5 @@ But for UAT/ Test enviroment, this should be controlled by the QA and the UI tes
 
 * More API integration tests over UI, as they will be faster and give us results as early as possible. This will help isolate any major feature functionality before hitting the UI, and isolate the issuer in service layer than UI layer. 
 
-
+* There are more possiblities of integration level testing with rest of the technologies used in the App, for example with cache and redis, but haven't done something similar in previous roles.
 

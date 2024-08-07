@@ -4,7 +4,7 @@
 // After login,
 // We will have
 // My Booking App (button or label)
-// Username number and logo
+// Username Logo
 // New Appointment button
 // This page will also contains all the functionalities of abilities to verify the existing of an
 // element and possibly functionalities, for exampke, clicking on New Appointment Button, which will lead to the pop up of the New Appointment pop up page
