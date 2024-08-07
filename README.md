@@ -1,1 +1,11 @@
 # evercommerceTechnicalTest
+- [evercommerceTechnicalTest](#evercommercetechnicaltest)
+  - [Table of Content](#table-of-content)
+  - [Setup](#setup)
+  - [Run and install](#run-and-install)
+  - [Running the tests and reports](#running-the-tests-and-reports)
+  - [The Kata](#the-kata)
+  - [Tests written](#tests-written)
+  - [Page Object Model](#page-object-model)
+  - [Further work](#further-work)
+  - [Disclaimer:](#disclaimer)
