@@ -5,7 +5,8 @@
 - [Trainning](#trainning)
 - [Excerise One](#excerise-one)
 - [Excerise Two](#excerise-two)
-- [My advice](#my-advice)
+- [CI/CD](#cicd)
+- [My 5 cent advice](#my-5-cent-advice)
 
 
 
@@ -27,6 +28,7 @@ For the tools/library I suggest that can be use to test the My Bookings App are 
 * [Gmail NodeJS](https://developers.google.com/gmail/api/quickstart/nodejs): This is another solution to enable us to test email notification (I have used this in previous project).
 * [Azure NodeJS](https://learn.microsoft.com/en-us/azure/developer/javascript/core/use-azure-sdk): I haven't used Azure for quite sometime, but I have used some part of the NodeJS library to test some of the Azure system in previous project, for this exercise, I believe we might be able to use it to access the SQL DB.
 * WebAPI service: We can use the Web API tests to manipulate data or verify if the data stored in the DB.
+  * [Playwright Rest API Test](https://playwright.dev/docs/api-testing): We can utilise Playwright existing API testing to trigger, the web api services.
 
 # Trainning
 
@@ -34,6 +36,8 @@ To provide reading or training materials for understanding the project, I will s
 
 * [Playwright](https://playwright.dev/): Playwright have got a great reference documentation and I would recommend any begginer before delving into understanding this project, is have a read and play first with the [Playwright CodeGen](https://playwright.dev/docs/codegen), this will give them a great way to understand the basic and record the test flow they want to build.
 * [Playwright POM](https://playwright.dev/docs/pom): To understand the reasons and basic of why we follow the Page Object Model, when designing any UI Automation test.
+* Learning how to code, NodeJS and any use library got enough documentation, else I  would recommend Udemy or Code Acadmey if the company can provide training.
+  
 
 # Excerise One
 
@@ -47,6 +51,7 @@ The Project breakdown is as follow:
 - test 
 -- Feature (for example Login, and each feature folder, will contains the basic, alternative, and error flows. Its better to breakdown the tests into small test files, else it will be hard to follow and read)
 ```
+
 Please refer to each file, there are discription of what each file does and possible functionalities and test scenarios for each feature.
 
 
@@ -64,8 +69,13 @@ To answer this questions, I usually build a guideline that we need to fllow:
 
 Even with guidelines, it usually get missed, my approach is mainly understand the issue of the feature and match it with how the test and the framework was built. Because, what was written yesterday, might not be ideal for tomorrow's solution. That is a similar approach with the features we are building based on the technologies we use. 
   
+# CI/CD
 
-# My advice
+How often do we run the tests, that mainly depends on how our Engineering team merge changes to master and release it.
+I will go with the assumption that any new PR merged to master get deployed to Development enviroment, this will be running very often. Ideally we can trigger our UI tests either after each merge or certain given time.
+But for UAT/ Test enviroment, this should be controlled by the QA and the UI tests can get trigger automatically, only once deployment for any change code is deployed correctly and all health check tests or monitoring tools, indicate all services are green. Before triggering the UI tests full regression test suite.
+
+# My 5 cent advice 
 
 * I usually perfer to follow the test Pyramid when desiging any type of Automation Test framework
   I would recommend breakdown the UI tests to focus mainly on User Journey and not on how an element in the UI looks like. We can use other tools like 
