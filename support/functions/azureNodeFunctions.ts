@@ -1,0 +1,2 @@
+// Based on our security and if EverComerce are comfortable to have the UI tests to have access directly 
+// to Azure, than this might be useful, based on what the functionality we are utlising from Azure
