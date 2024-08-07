@@ -1,6 +1,6 @@
 # evercommerceTechnicalTest
 - [evercommerceTechnicalTest](#evercommercetechnicaltest)
-  - [Table of Content](#table-of-content)
+  - [Introduction](#introduction)
   - [Setup](#setup)
   - [Run and install](#run-and-install)
   - [Running the tests and reports](#running-the-tests-and-reports)
